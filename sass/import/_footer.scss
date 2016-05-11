@@ -1,0 +1,81 @@
+footer {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  margin-top: -750px;
+  z-index: 6;
+  @media screen and (max-width: $screen-desktop){
+    margin-top: -640px;
+  }
+  @media screen and (max-width: $screen-tablet){
+    margin-top: -600px;
+  }
+  @media screen and (max-width: $screen-phone){
+    margin-top: -530px;
+  }
+  article {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    background-color: rgb(255, 102, 0);
+    box-shadow: 0px 10px 29px 0px rgba(0, 0, 0, 0.35);
+    z-index: 8;
+    text-align: center;
+    @media screen and (max-width: $screen-desktop){
+      width: 96%;
+      height: 640px;
+    }
+    @media screen and (max-width: $screen-tablet){
+      height: 600px;
+    }
+    @media screen and (max-width: $screen-phone){
+      height: 530px;
+    }
+    p {
+      font-size: 1.2em;
+      width: 900px;
+      margin: 50px auto;
+      @media screen and (max-width: $screen-desktop){
+        width: 90%;
+        font-size: 1em;
+        margin: 20px auto;
+      }
+      @media screen and (max-width: $screen-tablet){
+        font-size: .9em;
+      }
+      @media screen and (max-width: $screen-phone){
+        font-size: .6em;
+      }
+    }
+    h2 {
+      font-size: 2.8em;
+      @media screen and (max-width: $screen-desktop){
+        font-size: 2.4em;
+      }
+      @media screen and (max-width: $screen-tablet){
+        font-size: 2.2em;
+      }
+      @media screen and (max-width: $screen-phone){
+        font-size: 1.2em;
+      }
+    }
+    a {
+      display: block;
+      text-align: center;
+      margin: 30px 0;
+      @media screen and (max-width: $screen-phone){
+        margin: 10px 0;
+      }
+      &:nth-of-type(1) {
+        color: #ffffff;
+      }
+      &:nth-of-type(2) {
+        color: #000000;
+        font-weight: 700;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

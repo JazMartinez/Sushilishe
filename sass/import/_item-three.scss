@@ -1,0 +1,114 @@
+#item-three {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+  margin-top: -25px;
+  background: $main-color;
+  z-index: 6;
+  @media screen and (max-width: $screen-desktop){
+    padding: 20px 0;
+  }
+  @media screen and (max-width: $screen-tablet){
+    margin-top: -30px;
+  }
+  .container {
+    &:before {
+      content: '';
+      position: absolute;
+      right: 40px;
+      top: -405px;
+      width: 306px;
+      height: 872px;
+      background: url("../images/item-three-girl.png") no-repeat top;
+      z-index: 0;
+      @media screen and (max-width: $screen-lg-desktop){
+        background-size: 80%;
+        top: -290px;
+        right: -30px;
+      }
+      @media screen and (max-width: $screen-desktop){
+        background-size: 50%;
+        top: -120px;
+        right: -30px;
+      }
+      @media screen and (max-width: $screen-tablet){
+        top: -100px;
+        right: -60px;
+      }
+      @media screen and (max-width: $screen-phone){
+        background-size: 40%;
+        top: 0;
+        right: -90px;
+        opacity: .8;
+      }
+    }
+  }
+  h2 {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 50px;
+    @media screen and (max-width: $screen-desktop){
+      font-size: 1.4em;
+      margin-bottom: 30px;
+    }
+    @media screen and (max-width: $screen-tablet){
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    @media screen and (max-width: $screen-phone){
+      font-size: 1em;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -40px;
+      width: 100%;
+      height: 160px;
+      background: url("../images/item-three-text.png") no-repeat top / 90%;
+      @media screen and (max-width: $screen-desktop){
+        top: -25px;
+      }
+      @media screen and (max-width: $screen-phone){
+        display: none;
+      }
+    }
+  }
+  p {
+    position: relative;
+    z-index: 2;
+    font-size: 1.1em;
+    color: #ffffff;
+    text-align: center;
+    width: 800px;
+    margin: 30px auto;
+    @media screen and (max-width: $screen-desktop){
+      font-size: 1em;
+      margin: 10px auto;
+      width: 70%;
+    }
+    @media screen and (max-width: $screen-tablet){
+      font-size: 1em;
+    }
+    @media screen and (max-width: $screen-phone){
+      font-size: .8em;
+      width: 90%;
+    }
+  }
+  h3 {
+    position: relative;
+    z-index: 1;
+    color: $second-color;
+    font-size: 2.2em;
+    @media screen and (max-width: $screen-desktop){
+      font-size: 1.7em;
+    }
+    @media screen and (max-width: $screen-tablet){
+      font-size: 1.5em;
+    }
+    @media screen and (max-width: $screen-phone){
+      font-size: 1.2em;
+    }
+  }
+}

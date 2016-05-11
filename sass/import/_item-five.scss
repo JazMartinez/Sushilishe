@@ -1,0 +1,202 @@
+#item-five {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: url("../images/item-five-bg.png") no-repeat top / cover;
+  padding: 50px 0 195px 0;
+  z-index: 3;
+  @media screen and (max-width: $screen-desktop){
+    padding: 20px 0 170px;
+  }
+  @media screen and (max-width: $screen-tablet){
+    padding-bottom: 150px;
+  }
+  @media screen and (max-width: $screen-phone){
+    padding-bottom: 120px;
+  }
+  .container {
+    &:before {
+      content: '';
+      position: absolute;
+      right: 40px;
+      top: 0;
+      width: 307px;
+      height: 790px;
+      background: url("../images/item-five-girl.png") no-repeat top;
+      z-index: 3;
+      @media screen and (max-width: $screen-desktop){
+        background-size: 50%;
+        z-index: 0;
+        right: -40px;
+      }
+      @media screen and (max-width: $screen-phone){
+        background-size: 40%;
+        right: -90px;
+      }
+    }
+  }
+  .col-md-8 {
+    h2 {
+      @media screen and (max-width: $screen-desktop){
+        font-size: 1.6em;
+      }
+      @media screen and (max-width: $screen-tablet){
+        font-size: 1.4em;
+        width: 75%;
+      }
+      @media screen and (max-width: $screen-phone){
+        font-size: .9em;
+        width: 65%;
+        margin: 0;
+      }
+    }
+    p {
+      color: #ffffff;
+      text-align: center;
+      font-size: .9em;
+      @media screen and (max-width: $screen-desktop){
+        font-size: .8em;
+      }
+      @media screen and (max-width: $screen-tablet){
+        width: 70%;
+        font-size: .7em;
+      }
+      @media screen and (max-width: $screen-phone){
+        width: 65%;
+        font-size: .5em;
+      }
+      b {
+        font-size: 1.2em;
+      }
+    }
+  }
+  .slider-pro {
+    position: relative;
+    margin-top: 80px;
+    background-color: $second-color;
+    box-shadow: 0px 10px 32px 0px rgba(0, 0, 0, 0.35);
+    z-index: 5;
+    @media screen and (max-width: $screen-desktop){
+      margin-top: 20px;
+    }
+    @media screen and (max-width: $screen-phone){
+      margin-top: 10px;
+    }
+    .sp-slide {
+      img {
+        margin: 30px 15px;
+        @media screen and (max-width: $screen-desktop){
+          width: 50%;
+        }
+        @media screen and (max-width: $screen-phone){
+          width: 50%;
+          margin: 25px 5px;
+        }
+      }
+      p {
+        position: absolute;
+        right: 80px;
+        top: 25%;
+        width: 400px;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff;
+        @media screen and (max-width: $screen-desktop){
+          font-size: 1.1em;
+          text-align: center;
+          width: 50%;
+          right: 10px;
+        }
+        @media screen and (max-width: $screen-tablet){
+          font-size: 1em;
+          right: 0;
+        }
+        @media screen and (max-width: $screen-phone){
+          font-size: .8em;
+          line-height: 1;
+          top: 20%;
+          right: 5px;
+        }
+      }
+      &:nth-child(n+3) {
+        p {
+          top: 10%;
+          width: 450px;
+          @media screen and (max-width: $screen-desktop){
+            width: 50%;
+          }
+          @media screen and (max-width: $screen-tablet){
+            font-size: .6em;
+            top: 20%;
+          }
+        }
+      }
+      &:nth-child(6),
+      &:nth-child(8){
+        img {
+          margin: 30px 0;
+          @media screen and (max-width: $screen-phone){
+            width: 50%;
+            margin: 25px 5px;
+          }
+        }
+        p {
+          line-height: 1.1;
+          width: 500px;
+          top: 7%;
+          @media screen and (max-width: $screen-desktop){
+            width: 50%;
+            font-size: 1em;
+          }
+          @media screen and (max-width: $screen-tablet){
+            font-size: .9em;
+            line-height: 1.2;
+          }
+          @media screen and (max-width: $screen-phone){
+            font-size: .5em;
+            top: 8%;
+            line-height: 1;
+          }
+        }
+      }
+    }
+    .sp-buttons {
+      position: absolute;
+      bottom: -80px;
+      z-index: 5;
+      @media screen and (max-width: $screen-phone){
+        bottom: -60px;
+      }
+      .sp-button {
+        border: none;
+        background: #fff;
+      }
+      .sp-selected-button {
+        background: $main-color;
+      }
+    }
+  }
+  .sp-horizontal .sp-arrows {
+    position: absolute;
+    width: 24%;
+    left: 50%;
+    top: auto;
+    bottom: -47px;
+    margin: 0 0 0 -12%;
+    z-index: 10;
+    @media screen and (max-width: $screen-desktop){
+      width: 40%;
+      margin: 0 0 0 -20%;
+    }
+    @media screen and (max-width: $screen-tablet){
+      width: 50%;
+      margin-left: -25%;
+    }
+    @media screen and (max-width: $screen-phone){
+      width: 98%;
+      margin-left: -49%;
+      bottom: -23px;
+    }
+  }
+}

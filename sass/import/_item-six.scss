@@ -1,0 +1,107 @@
+#item-six {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: url("../images/item-six-bg.png") no-repeat top / cover;
+  margin-top: -123px;
+  padding: 100px 0 150px 0;
+  text-align: center;
+  z-index: 2;
+  @media screen and (max-width: $screen-desktop){
+    padding-top: 80px;
+  }
+  @media screen and (max-width: $screen-tablet){
+    padding-bottom: 120px;
+  }
+  @media screen and (max-width: $screen-phone){
+    padding-bottom: 90px;
+  }
+  h2 {
+    @media screen and (max-width: $screen-desktop){
+      font-size: 1.7em;
+    }
+    @media screen and (max-width: $screen-tablet){
+      font-size: 1.5em;
+    }
+    @media screen and (max-width: $screen-phone){
+      font-size: 1.2em;
+    }
+  }
+  p {
+    color: #fff;
+    margin: 40px auto;
+    width: 900px;
+    @media screen and (max-width: $screen-desktop){
+      width: 90%;
+      b {font-size: 1em;}
+      font-size: .9em;
+    }
+    @media screen and (max-width: $screen-tablet){
+      margin: 20px auto;
+      font-size: .8em;
+    }
+    @media screen and (max-width: $screen-phone){
+      font-size: .7em;
+    }
+  }
+  .item-six-desc {
+    width: 100%;
+    height: 190px;
+    padding-top: 15px;
+    background: url("../images/item-six-desc.png") no-repeat top;
+    color: #ffffff;
+    @media screen and (max-width: $screen-desktop){
+      font-size: 1em;
+    }
+    @media screen and (max-width: $screen-tablet){
+      font-size: .7em;
+      background-size: 98%;
+      height: 140px;
+      padding-top: 5px;
+    }
+    @media screen and (max-width: $screen-phone){
+      background: $main-color none;
+      height: 100px;
+      width: 90%;
+      margin: 10px auto;
+      border-radius: 10px;
+      font-size: .66em;
+      box-shadow: 0px 10px 32px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+  .item-six-slider {
+    position: relative;
+    display: block;
+    width: 1035px;
+    height: auto;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px 10px 0;
+    @media screen and (max-width: $screen-desktop){
+      width: 98%;
+      padding: 20px 10px;
+      margin-bottom: 50px;
+    }
+    @media screen and (max-width: $screen-phone){
+      width: 96%;
+      padding: 10px 8px;
+      margin-bottom: 30px;
+    }
+    .sp-horizontal .sp-arrows {
+      width: 112%;
+      left: -65px;
+      top: 45%;
+      margin-top: -15px;
+      @media screen and (max-width: $screen-desktop){
+        width: 30%;
+        top: 125%;
+        left: 50%;
+        margin-left: -15%;
+      }
+      @media screen and (max-width: $screen-phone){
+        width: 60%;
+        margin-left: -30%;
+      }
+    }
+  }
+}

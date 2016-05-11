@@ -1,0 +1,150 @@
+#item-four {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: fixed url("../images/item-four-bg.png") no-repeat top / cover;
+  z-index: 7;
+  margin-top: -5px;
+  padding: 40px 0;
+  @media screen and (max-width: $screen-desktop){
+    padding: 20px 0;
+  }
+  @media screen and (max-width: $screen-tablet){
+    margin-top: -10px;
+    padding: 10px 0 30px;
+    background-attachment: scroll;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 820px;
+    width: 100%;
+    height: 50px;
+    background: url("../images/item-four-line.png") no-repeat top;
+    @media screen and (max-width: $screen-desktop){
+      display: none;
+    }
+  }
+  h2 {
+    color: #a61c2c;
+    margin-bottom: 50px;
+    @media screen and (max-width: $screen-desktop){
+      font-size: 1.7em;
+    }
+    @media screen and (max-width: $screen-tablet){
+      font-size: 1.5em;
+      margin-bottom: 40px;
+    }
+    @media screen and (max-width: $screen-phone){
+      font-size: 1.1em;
+    }
+    &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 90px;
+    width: 100%;
+    height: 60px;
+    background: url("../images/head-text-line-2.png") no-repeat top;
+      @media screen and (max-width: $screen-desktop){
+        background-size: 80%;
+        top: 80px;
+      }
+      @media screen and (max-width: $screen-tablet){
+        top: 70px;
+      }
+      @media screen and (max-width: $screen-phone){
+        top: 85px;
+      }
+    }
+  }
+  p {
+    width: 800px;
+    margin: 30px auto;
+    font-size: 1.1em;
+    text-align: center;
+    @media screen and (max-width: $screen-desktop){
+      font-size: 1em;
+      width: 80%;
+    }
+    @media screen and (max-width: $screen-tablet){
+      font-size: .9em;
+      margin: 10px auto;
+    }
+    @media screen and (max-width: $screen-phone){
+      width: 90%;
+      font-size: .8em;
+    }
+  }
+  .item-four-items {
+    text-align: center;
+    @media screen and (max-width: $screen-desktop){
+      margin: 20px 0;
+    }
+    @media screen and (max-width: $screen-tablet){
+      margin: 30px 0;
+    }
+    @media screen and (max-width: $screen-phone){
+      margin: 20px 0;
+    }
+    img {
+      margin: 50px auto 80px;
+      @media screen and (max-width: $screen-desktop){
+        margin: 30px auto;
+      }
+      @media screen and (max-width: $screen-tablet){
+        margin: 20px auto;
+      }
+    }
+    p {
+      font-size: .8em;
+      width: auto;
+      margin: 0;
+      @media screen and (max-width: $screen-desktop){
+        width: 90%;
+      }
+      @media screen and (max-width: $screen-tablet){
+        font-size: 1em;
+        width: 70%;
+        margin: 0 auto;
+      }
+      @media screen and (max-width: $screen-phone){
+        font-size: .9em;
+        width: 90%;
+      }
+    }
+    .item-four-price {
+      width: 100%;
+      height: 87px;
+      background: url("../images/item-price.png") no-repeat top;
+      @media screen and (max-width: $screen-desktop){
+        padding-top: 10px;
+      }
+      @media screen and (max-width: $screen-tablet){
+        padding-top: 5px;
+      }
+      @media screen and (max-width: $screen-phone){
+        padding-top: 10px;
+      }
+      p {
+        font-size: 1em;
+        color: #ffffff;
+        font-weight: 700;
+        @media screen and (max-width: $screen-desktop){
+          width: auto;
+          font-size: .9em;
+        }
+        @media screen and (max-width: $screen-tablet){
+          font-size: 1em;
+        }
+        @media screen and (max-width: $screen-phone){
+          font-size: .9em;
+        }
+      }
+    }
+    &:nth-of-type(3) .item-four-price p {
+      line-height: 1;
+    }
+  }
+}

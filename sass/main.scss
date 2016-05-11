@@ -1,0 +1,116 @@
+@-o-viewport {
+  user-zoom: fixed
+}
+
+@viewport {
+  user-zoom: fixed
+}
+
+//template colors
+$main-color: #0a93e2;
+$first-color: #156c9f;
+$second-color: #fc772b;
+$third-color: #e82d33;
+
+//template fonts
+$header-font: 'PT Sans', sans-serif;
+$paragraph-font: 'Roboto', sans-serif;
+
+
+p b {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+body a {
+  font-size: 30px;
+}
+
+.container {
+  position: relative;
+}
+
+//bootstrap
+@import "import/bootstrap/bootstrap.scss";
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 24px !important;
+  color: #444444 !important;
+  font-family: $paragraph-font !important;
+  @media screen and (max-width: $screen-phone){
+    overflow-x: hidden;
+  }
+}
+
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: $header-font;
+  font-weight: 700;
+  text-align: center;
+  @media screen and (max-width: $screen-lg-desktop){
+    font-size: 1.7em;
+  }
+  @media screen and (max-width: $screen-desktop){
+    font-size: 1.7em;
+  }
+  @media screen and (max-width: $screen-tablet){
+    font-size: 1.5em;
+  }
+  @media screen and (max-width: $screen-phone){
+    font-size: 1em;
+  }
+}
+
+body .item-btn {
+  margin-top: 30px;
+  font-size: 30px;
+  padding: 5px 125px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: $third-color;
+  border-radius: 10px;
+  border: 5px solid $third-color;
+  transition: all .4s linear;
+  &:hover {
+    background: transparent;
+    color: $third-color;
+  }
+  @media screen and (max-width: $screen-tablet){
+    padding: 5px 100px;
+  }
+  @media screen and (max-width: $screen-phone){
+    font-size: .8em;
+    padding: 5px 30px;
+  }
+}
+
+#wrapper {
+  width: 100%;
+  position: relative;
+  height: auto;
+  @media screen and (max-width: $screen-phone){
+    overflow-x: hidden;
+  }
+}
+
+//main styles
+@import "import/header.scss";
+@import "import/item-one.scss";
+@import "import/item-two.scss";
+@import "import/item-three.scss";
+@import "import/item-four.scss";
+@import "import/item-five.scss";
+@import "import/item-six.scss";
+@import "import/item-seven.scss";
+@import "import/item-eight.scss";
+@import "import/item-nine.scss";
+@import "import/item-ten.scss";
+@import "import/item-eleven.scss";
+@import "import/item-twelve.scss";
+@import "import/footer.scss";
+@import "import/item-modal.scss";
